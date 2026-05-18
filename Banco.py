@@ -1,9 +1,18 @@
-class  conta:
+class  Conta:
     def __init__(self, titular, agencia, numero):
         self.__titular = titular
         self.__agencia = agencia
         self.__numero = numero
         self.__saldo = 0
+
+    @property
+    def titular(self):
+        return self.__titular
+
+    @titular.setter
+    def titular(self, novo_nome):
+        self.__titular = novo_nome
+
 
     def extrato(self):
         print(f"O saldo da {self.__titular} é {self.__saldo}")    
@@ -23,3 +32,5 @@ class  conta:
             print("Erro em efetuar o saque")
  
     def transferir(self, conta_destino, valor):
+        self.__saldo -= valor
+        conta_destino.__saldo += valor
