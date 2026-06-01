@@ -1,7 +1,13 @@
 import tkinter as tk
 
-def login():
-    print("Login realizado")
+if input_titular.get() == "admin":
+        if input_agencia.get() == "1234":
+            if input_cpf.get(): =="6789":
+                label_resposta.configure(text="Login realizado com sucesso!!", fg="green")
+        else:
+            label_resposta.configure(text="Falha no login", fg="red")
+    else:
+        label_resposta.configure(text="Falha no login", fg="red")
 
 app = tk.Tk()
 app.title("Tela Exemplo :3")
@@ -22,7 +28,7 @@ botao = tk.Button(app, text="Enviar", command=login)
 botao.pack(pady=10)
 
 label1_resposta = tk.label1(app, text="")
-
+label_resposta.pack(pady=5)
 
     
 app.mainloop()
