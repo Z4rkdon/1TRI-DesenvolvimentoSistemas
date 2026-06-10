@@ -1,0 +1,29 @@
+[
+    {
+        "titular": "yaelokre",
+        "agencia": "2901",
+        "numero": "8053-7",
+        "cpf": "7318",
+        "saldo": 0,
+        "senha": 143907,
+        "chavepix": []
+    },
+    {
+        "titular": "pomni",
+        "agencia": "4002",
+        "numero": "6085-9",
+        "cpf": "8922",
+        "saldo": 0,
+        "senha": 209910,
+        "chavepix": []
+    },
+    {
+        "titular": "admin",
+        "agencia": "1234",
+        "numero": "2954-7",
+        "cpf": "6789",
+        "saldo": 0,
+        "senha": 236851,
+        "chavepix": []
+    }
+]
